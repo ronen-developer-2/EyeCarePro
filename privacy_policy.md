@@ -1,30 +1,34 @@
 # Privacy Policy for EyeCare Pro
 
-**Effective Date:** March 7, 2026
+**Last Updated:** March 11, 2026
 
-Your privacy is important to us. This Privacy Policy explains how **EyeCare Pro** ("we", "us", or "the extension") handles your data when you install and use the extension.
+Your privacy is our highest priority. **EyeCare Pro** is designed with a "Local-First" architecture, meaning we have built the extension to function without harvesting, storing, or transmitting your personal data. This policy explains exactly how we handle the minimal data points required for the extension to work.
 
-## 1. Information We Collect
+## 1. Zero Data Collection & Transmission
 **We do not collect, store, or transmit any of your personal data to our servers.**
 
-All extension settings, preferences (such as your reminder intervals, sound preferences, and smart pausing blacklists), and usage data (such as how many breaks you've taken today) are saved locally on your device or synced via your standard Google Chrome account using the `chrome.storage.sync` API. We do not have access to this data.
+All settings, preferences (such as your reminder intervals, sound preferences, and smart pausing blacklists), and productivity metrics (the count of breaks you've taken today) are stored exclusively on your device. We use the standard `chrome.storage` API, which ensures your data remains within your browser environment.
 
-## 2. Permissions We Use and Why
-EyeCare Pro requires specific browser permissions to function as intended:
-- **Alarms (`alarms`)**: Used to perfectly time your eye rest reminders in the background without slowing down your browser.
-- **Storage (`storage`)**: Used to save your customized preferences and break history locally.
-- **Windows / Notifications (`windows`, `notifications`)**: Used to spawn the visual reminder popup on your screen when it is time to take a break.
-- **Active Tab (`activeTab` / `tabs`)**: Used exclusively for the Premium "Smart Pausing" feature to check if your current URL matches your custom blacklist (e.g., netflix.com) so the extension knows to delay the alarm. We do not monitor, log, or transmit your browsing history.
+## 2. Permissions & Data Usage
+EyeCare Pro requires specific browser permissions to provide its vision-health features. We follow the principle of **Least Privilege**:
 
-## 3. Third-Party Services (Premium Users Only)
-If you choose to upgrade to **EyeCare Premium**, you will be asked to enter a Gumroad License Key.
-When you click "Verify," the extension makes a secure, direct request to the official **Gumroad API** (`api.gumroad.com`) to validate your purchase. We do not store your payment information, email address, or any other personal details related to the transaction. The license verification is handled entirely between your browser and Gumroad.
+- **Alarms (`alarms`)**: Used to schedule break intervals. Timing data is processed locally to trigger reminders.
+- **Storage (`storage`)**: Used to save your customized preferences locally. If you are signed into Chrome, this data may sync across your own devices via Google's secure sync service; we never have access to this sync stream.
+- **Tabs (`tabs`)**: Used exclusively for the **"Smart Pausing"** feature. The extension checks the hostname of the currently active tab against your local blacklist (e.g., streaming or meeting sites) to intelligently delay reminders. **We do not monitor, log, or transmit your browsing history.** The check happens in real-time and no record of the sites you visit is ever kept.
+- **Notifications (`notifications`)**: Used to send system-level alerts when a break is due.
+- **System Display (`system.display`)**: Used to ensure the break popup is perfectly centered on your screen, regardless of your monitor setup or resolution.
 
-## 4. Analytics and Tracking
-EyeCare Pro contains **no tracking scripts, no analytics, and no advertising**. We do not track your clicks, your browsing habits, or how you interact with the extension. 
+## 3. Secure Premium Verification
+If you choose to upgrade to **EyeCare Premium**, you will enter a Gumroad License Key.
+- **Verification**: The extension makes a secure, encrypted request to the **Gumroad API** (`api.gumroad.com`) to validate the key.
+- **Limited Use**: This is the **only external network request** the extension makes. We do not receive or store your payment details, email address, or identity. Verification is handled directly between your browser and Gumroad.
 
-## 5. Changes to This Policy
-We may update this Privacy Policy from time to time if new features require different permissions. Any changes will be reflected on this page, and the "Effective Date" will be updated.
+## 4. No Third-Party Tracking
+- **No Analytics**: We do not use Google Analytics, cookies, or any other tracking pixels.
+- **No Advertising**: We do not sell data to third parties. Our business model is based entirely on one-time Premium upgrades, not data monetization.
 
-## 6. Contact Us
-If you have any questions or concerns about this Privacy Policy or how your data is handled, please reach out to us via the support contact provided on our Chrome Web Store page.
+## 5. Compliance
+EyeCare Pro is fully compliant with the **Chrome Web Store User Data Policy**, including the "Limited Use" requirements. We ensure that the data accessed is only what is necessary to provide and improve the user-facing features of the extension.
+
+## 6. Contact
+If you have questions about this policy or our privacy practices, please contact us through the developer support link on the Chrome Web Store.
