@@ -1,6 +1,6 @@
 # Privacy Policy for EyeCare Pro
 
-**Last Updated:** March 11, 2026
+**Last Updated:** May 19, 2026
 
 Your privacy is our highest priority. **EyeCare Pro** is designed with a "Local-First" architecture, meaning we have built the extension to function without harvesting, storing, or transmitting your personal data. This policy explains exactly how we handle the minimal data points required for the extension to work.
 
@@ -17,18 +17,15 @@ EyeCare Pro requires specific browser permissions to provide its vision-health f
 - **Tabs (`tabs`)**: Used exclusively for the **"Smart Pausing"** feature. The extension checks the hostname of the currently active tab against your local blacklist (e.g., streaming or meeting sites) to intelligently delay reminders. **We do not monitor, log, or transmit your browsing history.** The check happens in real-time and no record of the sites you visit is ever kept.
 - **Notifications (`notifications`)**: Used to send system-level alerts when a break is due.
 - **System Display (`system.display`)**: Used to ensure the break popup is perfectly centered on your screen, regardless of your monitor setup or resolution.
+- **Windows (`windows`)**: Used to create, display, and manage the focus of the break reminder popup window, ensuring you receive your scheduled reminders effectively.
 
-## 3. Secure Premium Verification
-If you choose to upgrade to **EyeCare Premium**, you will enter a Gumroad License Key.
-- **Verification**: The extension makes a secure, encrypted request to the **Gumroad API** (`api.gumroad.com`) to validate the key.
-- **Limited Use**: This is the **only external network request** the extension makes. We do not receive or store your payment details, email address, or identity. Verification is handled directly between your browser and Gumroad.
+## 3. No Third-Party Tracking & Fully Free
+- **Completely Free**: EyeCare Pro is 100% free with all features (custom intervals, strict mode, smart pausing, and all alert sounds) unlocked for everyone. There are no paid upgrades or commercial licenses.
+- **No Analytics or Network Requests**: The extension makes **zero external network requests**. We do not use Google Analytics, cookies, tracking pixels, or third-party servers.
+- **No Advertising**: We do not serve ads or sell data to third parties. Our extension is built solely to support vision health.
 
-## 4. No Third-Party Tracking
-- **No Analytics**: We do not use Google Analytics, cookies, or any other tracking pixels.
-- **No Advertising**: We do not sell data to third parties. Our business model is based entirely on one-time Premium upgrades, not data monetization.
-
-## 5. Compliance
+## 4. Compliance
 EyeCare Pro is fully compliant with the **Chrome Web Store User Data Policy**, including the "Limited Use" requirements. We ensure that the data accessed is only what is necessary to provide and improve the user-facing features of the extension.
 
-## 6. Contact
-If you have questions about this policy or our privacy practices, please contact us through the developer support link on the Chrome Web Store.
+## 5. Contact
+If you have questions about this policy or our privacy practices, please contact us at **ronen.developer.2@gmail.com** or through the developer support link on the Chrome Web Store.
